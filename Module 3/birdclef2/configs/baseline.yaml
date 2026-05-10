@@ -1,0 +1,16 @@
+max_epochs: 10
+batch_size: 128
+weight_decay: 1e-4
+grad_clip: 1.0
+warmup_pct: 0.2
+mixup:
+  prob: 0.25
+  alpha: 0.8
+lr: 3e-3
+loss: bce
+pred_threshold: 0.5
+k: 3
+model:
+  model: cnn
+  backbone: efficientnet_b0
+  pretrained: true

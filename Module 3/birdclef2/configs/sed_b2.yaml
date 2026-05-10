@@ -1,0 +1,16 @@
+max_epochs: 10
+batch_size: 48
+weight_decay: 1e-4
+grad_clip: 1.0
+warmup_pct: 0.2
+mixup:
+  prob: 0.25
+  alpha: 0.8
+lr: 1e-3
+loss: bce
+pred_threshold: 0.5
+k: 3
+model:
+  model: sed
+  backbone: efficientnet_b2
+  pretrained: true
